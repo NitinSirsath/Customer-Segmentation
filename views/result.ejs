@@ -1,0 +1,15 @@
+<div class="container">
+<h1 style="margin-left: 30px;"><%=obj.name%></h1>
+ <div>
+ 	<img style="height: 500px; width: 500px; margin-left: 50px; " src="<%=obj.pic%>">
+ </div>
+ </div>
+<form style="margin: 0px 0px 0px 50px;" action="/clustered" method="POST">
+  
+  Enter the optimal k, i.e, the value controlling the number of clusters<br><br>
+  <div class="ui input">
+    <input type="text" name="k" required=""/><br>
+  </div>
+  <input type="text" name="filename" value="<%=filename%>">
+  <input type="submit" value="submit"><br>
+ </form>
